@@ -6,9 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println(a+" "+b);
+
+        System.out.println(b+" "+a);
     }
 }
