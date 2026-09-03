@@ -3,21 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static int minNum(int a, int b, int c){
         int min = a;
-        if(a > b){
-            if(c > a || c > b){
-                min = b;
-            }
-            else{
-                min = c;
-            }
+        if(min > b){
+            min = b;
         }
-        else{
-            if(c > b || c > a){
-                min = a;
-            }
-            else{
-                min = c;
-            }
+        if(min > c){
+            min = c;
         }
         return min;
     }
