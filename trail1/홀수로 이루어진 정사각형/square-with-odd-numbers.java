@@ -7,10 +7,8 @@ public class Main {
         int n = sc.nextInt();
 
         for(int i=0; i<n; i++){
-            int cnt = 11+i*2;
             for(int j=0; j<n; j++){
-                System.out.print(cnt+" ");
-                cnt += 2;
+                System.out.print(11+j*2+i*2+" ");
             }
             System.out.println();
         }
