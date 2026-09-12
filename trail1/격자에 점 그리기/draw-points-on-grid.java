@@ -7,13 +7,11 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int[][] arr = new int[n][n];
-        int cnt = 1;
 
         for(int i=0; i<m; i++){
             int r = sc.nextInt();
             int c = sc.nextInt();
-            arr[r-1][c-1] = cnt;
-            cnt++;
+            arr[r-1][c-1] = i+1;
         }
 
         for(int i=0; i<n; i++){
