@@ -11,12 +11,7 @@ public class Main {
         for(int i=0; i<m; i++){
             int r = sc.nextInt();
             int c = sc.nextInt();
-
-            for(int j=0; j<n; j++){
-                for(int k=0; k<n; k++){
-                    arr[r-1][c-1] = 1;
-                }
-            }
+            arr[r-1][c-1] = 1;
         }
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
