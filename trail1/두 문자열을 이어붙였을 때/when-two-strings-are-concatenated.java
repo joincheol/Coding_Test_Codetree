@@ -8,12 +8,13 @@ public class Main {
         String b = sc.next();
         String ab = a+b;
         String ba = b+a;
+        boolean status = true;
 
-        if(ab.equals(ba)){
-            System.out.println("true");
+        for(int i=0; i<ab.length(); i++){
+            if(ab.charAt(i) != ba.charAt(i)){
+                status = false;
+            }
         }
-        else{
-            System.out.println("false");
-        }
+        System.out.println(status);
     }
 }
