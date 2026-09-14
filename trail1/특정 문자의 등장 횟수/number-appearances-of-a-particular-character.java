@@ -9,10 +9,10 @@ public class Main {
         int cnt2 = 0;
 
         for(int i=0; i<str.length()-1; i++){
-            if(str.charAt(i) == 'e' && str.charAt(i+1) == 'e'){
+            if(str.substring(i, i+2).equals("ee")){
                 cnt1++;
             }
-            if(str.charAt(i) == 'e' && str.charAt(i+1) == 'b'){
+            if(str.substring(i, i+2).equals("eb")){
                 cnt2++;
             }
         }
