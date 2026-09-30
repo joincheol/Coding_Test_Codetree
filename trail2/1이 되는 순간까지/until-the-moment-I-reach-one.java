@@ -1,16 +1,14 @@
 import java.util.Scanner;
 public class Main {
-    static int cnt = 0;
     static int cal(int n){
         if(n == 1){
-            return cnt;
+            return 0;
         }
-        cnt++;
         if(n % 2 == 0){
-            return cal(n/=2);
+            return cal(n/=2) + 1;
         }
         else{
-            return cal(n/=3);
+            return cal(n/=3) + 1;
         }
     }
 
