@@ -2,18 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     static int getSum(int n){
-        int total = 0;
-        if(n % 2 == 1){
-            for(int i=1; i<=n; i+=2){
-                total += i;
-            }
+        if(n==1){
+            return 1;
         }
-        else{
-            for(int i=2; i<=n; i+=2){
-                total += i;
-            }
+        if(n==2){
+            return 2;
         }
-        return total;
+        return getSum(n - 2) + n;
     }
 
     public static void main(String[] args) {
