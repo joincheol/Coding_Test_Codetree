@@ -1,16 +1,12 @@
 import java.util.Scanner;
 public class Main {
     static int[] arr;
-    static int max;
 
     static int getMax(int n){
         if(n==0){
-            return max;
+            return arr[n];
         }
-        if(max < arr[n]){
-            max = arr[n];
-        }
-        return getMax(n-1);
+        return Math.max(getMax(n-1), arr[n]);
     }
 
     public static void main(String[] args) {
@@ -21,7 +17,6 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         // Please write your code here.
-        max = arr[0];
         System.out.println(getMax(n-1));
     }
 }
