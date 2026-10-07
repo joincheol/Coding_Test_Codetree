@@ -5,8 +5,8 @@ class Info{
     int level = 0;
 
     public Info(){
-        this.id = "codetree";
-        this.level = 10;
+        this.id = "";
+        this.level = 0;
     }
     public Info(String id, int level){
         this.id = id;
@@ -22,6 +22,9 @@ public class Main {
         // Please write your code here.
         Info u1 = new Info();
         Info u2 = new Info(id, level);
+
+        u1.id = "codetree";
+        u1.level = 10;
 
         System.out.println("user "+u1.id+" lv "+u1.level);
         System.out.println("user "+u2.id+" lv "+u2.level);
