@@ -13,7 +13,6 @@ public class Main {
         for(int i=1; i<str.length(); i++){
             if(s[i] == s[i-1]){
                 count++;
-                continue;
             }
             else{
                 runLength += count;
